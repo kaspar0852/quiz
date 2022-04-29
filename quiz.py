@@ -1,11 +1,5 @@
-from datetime import datetime
-current_datetime = datetime.now()
-
-
 
 print("Lets test your general knowlegde shall we?")
-
-
 
 def start_quiz():
     guesses = []
