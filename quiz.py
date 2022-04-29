@@ -1,3 +1,7 @@
+print("Lets test your general knowlegde shall we?")
+
+
+
 def start_quiz():
     guesses = []
     correct_guesses = 0
@@ -33,6 +37,8 @@ def check_answer(answer,guess):
     else:
          print("INCORRET")
          return max-15
+    ''' here we get the value of the right and the wrong answers , if the answer is equal to guess
+    then the value of max i returned i.e 10 else the value -5 is returned if the condition is false'''
      
 def display_score(corret_guesses,guesses):
     print("---------------------------------")
@@ -67,6 +73,7 @@ def play_again():
         return True
     else:
         return False
+    
 
 def new_ques():
         ''' print("current set of question is",questions) '''
@@ -82,6 +89,13 @@ def new_ques():
         options.append([new_o_a,new_o_b,new_o_c,new_o_d])
         
         start_quiz()
+        
+        ''' this function is one of the important functions in this program because it adds
+        a new key and value pair in out dictionary using the line of code in line 84.
+        and the line 86 is used to append out list which is one of the features in DSA of python.
+        Both the dictionary 'questions' and list 'options' will be updated dynamically when the user 
+        wants to add new data to it.
+        '''
         
         ''' print("the new question set with its  answer are ", questions) '''
         '''  print("the new options are ",options) '''
