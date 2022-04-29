@@ -1,5 +1,11 @@
+from datetime import datetime
+
+dt = datetime.now()
+ts = datetime.timestamp(dt)
+
 
 print("Lets test your general knowlegde shall we?")
+
 
 def start_quiz():
     guesses = []
@@ -59,7 +65,17 @@ def display_score(corret_guesses,guesses):
     print()
     
     score = int(corret_guesses)
-    print("Your score is : "+str(score))
+    ("Your score is : "+str(score))
+    
+    with open('so.txt','a') as file:
+        print('\nthe printed data in file:  ', str(score),file=file)
+        print('\nThe timestamp is:',ts,file=file)
+    
+    ''' here in line 67 and 68 we opened a file in append more that is in this more new value can 
+    be added without erasing the older data . I stored the score of the quiz in the 
+    file named so.txt in the folder.
+    We can simply pass the output of python inbuilt print function 
+    to a file after opening the file with the append option '''
     
 def add_new_questions():
     response = input("do you want to add more questions?")
@@ -136,6 +152,9 @@ passed ={
 
 
 start_quiz()
+
+
+
 
 while play_again():
     start_quiz()
