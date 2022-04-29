@@ -70,7 +70,7 @@ def display_score(corret_guesses,guesses):
     ("Your score is : "+str(score))
     
     with open('so.txt','a') as file:
-        print('\nthe printed data in file:  ', str(score),file=file)
+        print('\nyou score is  printed in file:  ', str(score),file=file)
         print('\nThe timestamp is:',ts,file=file)
     
     ''' here in line 67 and 68 we opened a file in append more that is in this more new value can 
