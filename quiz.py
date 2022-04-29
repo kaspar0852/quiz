@@ -46,8 +46,10 @@ def check_answer(answer,guess):
          print("INCORRET")
          return max-15
     
-    ''' here we get the value of the right and the wrong answers , if the answer is equal to guess
-    then the value of max i returned i.e 10 else the value -5 is returned if the condition is false'''
+    ''' here we get the value of the right and the wrong answers ,
+    if the answer is equal to guess
+    then the value of max i returned i.e 10 else the value 
+    -5 is returned if the condition is false'''
      
 def display_score(corret_guesses,guesses):
     print("---------------------------------")
