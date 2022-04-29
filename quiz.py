@@ -90,16 +90,29 @@ def new_ques():
               
     
 questions = {
- "Who created Python?: ": "A",
- "What year was Python created?: ": "B",
- "Python is tributed to which comedy group?: ": "C",
- "Is the Earth round?: ": "A"
+ "what is the capital of Chile?: ": "D",
+ "What is the highest mountain in the world: ": "B",
+ "what is the smallest country in the world?: ": "C",
+ "What is the largest country in the world?: ": "A",
+ "How many players are there in a rugby team?:": "C",
+ "Who won the FIFA  Women's World Cup in 2019?:": "D",
+ "What is the fastest memory in a computer?: ": "B",
+ "What is the capital of Finland?:": "D",
+ "What is the name of the lead singer of Guns and Roses?: ": "A",
+ "Alberta is a provvince of which country: ": "A",
 }
 
-options = [["A. Guido van Rossum", "B. Elon Musk", "C. Bill Gates", "D. Mark Zuckerburg"],
-          ["A. 1989", "B. 1991", "C. 2000", "D. 2016"],
-          ["A. Lonely Island", "B. Smosh", "C. Monty Python", "D. SNL"],
-          ["A. True","B. False", "C. sometimes", "D. What's Earth?"]]
+options = [["A. Rome", "B. Kathmandu", "C. New Delhi", "Santiago"],
+          ["A. K2", "B. Everest", "C. Manaslu", "D. Mardi"],
+          ["A. Nepal", "India", "C. USA", "Vatican City"],
+          ["A. Russia","B. Spain", "C. England", "D. Nepal"],
+          ["A. 11","B. 12", "C. 13", "D. 10"],
+          ["A. Canada","B. Spain", "C. England", "D. USA"],
+          ["A. Cache","B. RAM", "C. HDD", "D. SSD"],
+          
+          ["A. Sample","B. Dubai", "C. England", "D. Helsinki"],
+          ["A. Axel Rose","B. Gustavo", "C. Arjit Singh", "D. Pramod Kharel"],
+          ["A. Canada","B. Spain", "C. England", "D. Nepal"],]
 
 
 start_quiz()
