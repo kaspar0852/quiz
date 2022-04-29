@@ -1,3 +1,8 @@
+from datetime import datetime
+current_datetime = datetime.now()
+
+
+
 print("Lets test your general knowlegde shall we?")
 
 
@@ -13,12 +18,15 @@ def start_quiz():
         for i in options[question_num-1]:
             print(i)
             
-        guess = input("Enter(A,B,C,D):")
+        guess = input("Enter(A,B,C,D,P):")
         guess = guess.upper()
         guesses.append(guess)
-        
-        correct_guesses += check_answer(questions.get(key),guess)
-        question_num+= 1
+        if guess == 'P':
+            question_num+=1
+            print("Question Passed")
+        else:    
+          correct_guesses += check_answer(questions.get(key),guess)
+          question_num+= 1
         
     display_score(correct_guesses,guesses)
     inp = input("do you want to add new questions?")
@@ -37,6 +45,7 @@ def check_answer(answer,guess):
     else:
          print("INCORRET")
          return max-15
+    
     ''' here we get the value of the right and the wrong answers , if the answer is equal to guess
     then the value of max i returned i.e 10 else the value -5 is returned if the condition is false'''
      
@@ -126,6 +135,10 @@ options = [["A. Rome", "B. Kathmandu", "C. New Delhi", "Santiago"],
           ["A. Sample","B. Dubai", "C. England", "D. Helsinki"],
           ["A. Axel Rose","B. Gustavo", "C. Arjit Singh", "D. Pramod Kharel"],
           ["A. Canada","B. Spain", "C. England", "D. Nepal"],]
+
+passed ={
+    "pass" :"P"
+}
 
 
 start_quiz()
