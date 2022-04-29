@@ -109,7 +109,6 @@ options = [["A. Rome", "B. Kathmandu", "C. New Delhi", "Santiago"],
           ["A. 11","B. 12", "C. 13", "D. 10"],
           ["A. Canada","B. Spain", "C. England", "D. USA"],
           ["A. Cache","B. RAM", "C. HDD", "D. SSD"],
-          
           ["A. Sample","B. Dubai", "C. England", "D. Helsinki"],
           ["A. Axel Rose","B. Gustavo", "C. Arjit Singh", "D. Pramod Kharel"],
           ["A. Canada","B. Spain", "C. England", "D. Nepal"],]
