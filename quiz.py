@@ -72,6 +72,7 @@ def display_score(corret_guesses,guesses):
     with open('so.txt','a') as file:
         print('\nyou score is  printed in file:  ', str(score),file=file)
         print('\nThe timestamp is:',ts,file=file)
+        print("\nThe current date and time is : ", dt,file=file)
     
     ''' here in line 67 and 68 we opened a file in append more that is in this more new value can 
     be added without erasing the older data . I stored the score of the quiz in the 
